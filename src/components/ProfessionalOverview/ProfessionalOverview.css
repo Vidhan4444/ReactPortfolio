@@ -1,0 +1,58 @@
+.professional-overview {
+  padding: 80px 10%;
+  background: #0a2235;
+  color: #ededed;
+}
+
+.overview-title {
+  text-align: center;
+  font-size: 34px;
+  color: #00abf0;
+  margin-bottom: 35px;
+  font-weight: 600;
+}
+
+.overview-content {
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.overview-content p {
+  margin-bottom: 18px;
+}
+
+.overview-content strong {
+  color: #00abf0;
+}
+
+/* Mobile responsiveness */
+/* @media (max-width: 480px) {
+  .professional-overview {
+    padding: 60px 6%;
+  }
+
+  .overview-title {
+    font-size: 26px;
+  }
+
+  .overview-content {
+    font-size: 16px;
+  }
+} */
+@media (max-width: 768px) {
+  .professional-overview {
+    padding: 60px 6%;
+  }
+
+  .overview-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .overview-content {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}

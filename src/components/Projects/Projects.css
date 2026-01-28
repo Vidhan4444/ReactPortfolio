@@ -1,0 +1,161 @@
+.projects {
+  padding: 80px 10%;
+  background: #081b29;
+}
+
+.projects-title {
+  text-align: center;
+  color: #00abf0;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #0a2235;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 171, 240, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  height: 250px;
+  /* slightly bigger, looks premium */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-card p {
+  color: #ededed;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.project-card .btn {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.project-card h3 {
+  color: #00abf0;
+  font-size: 20px;
+}
+
+.project-card h3 {
+  color: #00abf0;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #ededed;
+  margin-bottom: 15px;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.project-tech span {
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: rgba(0, 171, 240, 0.15);
+  color: #00abf0;
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: #081b29;
+  padding: 32px;
+  max-width: 520px;
+  width: 90%;
+  border-radius: 18px;
+  color: #ededed;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #00abf0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-box h2 {
+  color: #00abf0;
+  margin-bottom: 8px;
+}
+
+.modal-box p {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.modal-box ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.modal-box .btn {
+  align-self: center;
+  /* ⬅ left aligned, professional */
+  margin-top: 12px;
+}
+
+.modal-box a {
+  text-decoration: none;
+}
+
+@media(max-width:480px) {
+  .modal-box {
+    padding: 24px;
+    max-width: 95%;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+}

@@ -1,0 +1,129 @@
+.about {
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: black;
+  color: white;
+  padding: 60px 10%;
+}
+
+.about-title {
+  text-align: center;
+  color: #00abf0;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.about-img img {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 67, 233, 0.5);
+}
+
+.about-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-content h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-btn {
+  margin-top: 25px;
+}
+
+.cv-btn {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid #00abf0;
+  color: #00abf0;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3 ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 171, 240, 0.6);
+}
+
+.cv-btn:hover {
+  background: #00abf0;
+  color: #081b29;
+  box-shadow: 0 0 18px rgba(0, 171, 240, 0.9);
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 6%;
+    min-height: auto;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .about-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-img img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 171, 240, 0.4);
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-content h3 {
+    font-size: 22px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .about-btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.contact-link {
+  color: #00abf0;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.contact-note {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 10px;
+}

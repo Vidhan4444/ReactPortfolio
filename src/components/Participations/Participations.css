@@ -1,0 +1,131 @@
+.participations {
+  padding: 80px 10%;
+  background: #081b29;
+}
+
+.participations-title {
+  text-align: center;
+  color: #00abf0;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.participations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.modal-box {
+  background: #081b29;
+  color: #ededed;
+  width: 90%;
+  max-width: 900px;
+
+  max-height: 85vh;
+  /* 🔑 responsive height */
+  overflow-y: auto;
+  /* scroll only if needed */
+
+  padding: 30px;
+  border-radius: 16px;
+  position: relative;
+
+  box-shadow: 0 0 30px rgba(0, 171, 240, 0.35);
+}
+
+.participation-card {
+  background: #0a2235;
+  padding: 22px;
+  border-radius: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0, 171, 240, 0.25);
+}
+
+.participation-card h3 {
+  color: #00abf0;
+  margin-bottom: 8px;
+}
+
+.participation-type {
+  font-size: 14px;
+  color: #00abf0;
+  margin-bottom: 6px;
+}
+
+.participation-org {
+  font-size: 14px;
+  color: #ededed;
+  margin-bottom: 8px;
+}
+
+.participation-problem {
+  font-size: 14px;
+  color: #ededed;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .participation-card {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-box {
+    width: 94%;
+    padding: 20px;
+    border-radius: 14px;
+    max-height: 90vh;
+  }
+
+  .modal-box h2 {
+    font-size: 20px;
+  }
+
+  .modal-box p,
+  .modal-box li {
+    font-size: 14px;
+  }
+}
+
+.participation-gallery {
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.participation-gallery img {
+  width: 100%;
+  max-width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: none;
+  border: none;
+  color: #00abf0;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.image-toggle-section {
+  margin: 16px 0;
+}
+
+.participation-image {
+  margin-top: 12px;
+}
+
+.participation-image img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #0a2235;
+  padding: 8px;
+}

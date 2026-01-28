@@ -1,0 +1,138 @@
+#contact {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 10%;
+  background-color: #0a2235;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 36px;
+  color: #00abf0;
+  margin-bottom: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  color: white;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.contact-info i {
+  color: #00abf0;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.contact-info i:hover {
+  text-shadow: 0 0 10px #00abf0, 0 0 20px #00abf0;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 450px;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  background: #0a2235;
+  color: white;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0, 171, 240, 0.3);
+  transition: 0.3s ease;
+}
+
+.contact-form input:focus {
+  outline: none;
+  box-shadow: 0 0 20px rgba(0, 171, 240, 0.8);
+}
+
+.btn {
+  background: #00abf0;
+  color: #081b29;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px #00abf0;
+}
+
+.btn:hover {
+  background: #00abf0;
+  color: white;
+  box-shadow: 0 0 25px #00abf0, 0 0 50px #00abf0, 0 0 75px #00abf0;
+  transform: scale(1.05);
+}
+
+.contact-info h3 {
+  font-size: 28px;
+  color: #00abf0;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #00abf0, 0 0 20px #00abf0;
+}
+
+.contact-info p:first-of-type {
+  color: #ededed;
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  text-shadow: 0 0 8px rgba(0, 171, 240, 0.3);
+}
+
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  background: #0a2235;
+  color: white;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0, 171, 240, 0.3);
+}
+
+.form-status {
+  margin-top: 12px;
+  font-size: 14px;
+  animation: fadeOut 4s forwards;
+
+}
+
+.form-status.success {
+  color: #00abf0;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
