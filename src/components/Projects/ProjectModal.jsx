@@ -2,7 +2,7 @@ import "./ProjectModal.css";
 
 const ProjectModal = ({ project, onClose }) => {
   return (
-    <div className="modal-backdrop">
+    <div className="modal-backdrop" id='projects'>
       <div className="modal-box">
         <button className="modal-close" onClick={onClose}>✕</button>
 

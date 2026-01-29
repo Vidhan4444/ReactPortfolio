@@ -1,4 +1,5 @@
 import "./Home.css";
+import backgroundImage from '../../assets/images/BackgroundImage.png';
 
 const Home = () => {
   return (
@@ -25,10 +26,9 @@ const Home = () => {
       </div>
 
       <div className="home-img">
-        <img src="/assets/images/change the backgroun.png" alt="Sumeet" />
+        <img src={backgroundImage} alt="Sumeet" />
       </div>
 
-      <span className="home-imghover"></span>
     </section>
   );
 };

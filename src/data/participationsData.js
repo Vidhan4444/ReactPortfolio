@@ -1,3 +1,8 @@
+import Optmise from '../assets/images/participations/Optmise.jpeg';
+import Inventra from '../assets/images/participations/inventra.jpeg';
+import InnoRise from '../assets/images/participations/InnoRisecertificate.jpeg';
+import Hackvyuha from '../assets/images/participations/HackvyuhaCertificate.jpeg';
+
 const participationsData = [
   {
   id: 1,
@@ -6,7 +11,7 @@ const participationsData = [
   type: "Hackathon",
   problemStatement: "Documorph AI",
   role: "Frontend Development",
-  image: '/assets/images/participations/HackvyuhaCertificate.jpeg',
+  image: Hackvyuha,
   description:
     "Worked on an AI-based document processing system aimed at automating document understanding and transformation.",
   learnings: [
@@ -30,7 +35,7 @@ const participationsData = [
     "Structuring APIs and data flow for real-world problems",
     "Collaborating with frontend teammates to integrate features",
   ],linkedin:'https://www.linkedin.com/posts/sumeet-salunke-052070325_klecet-hackathon-ai-activity-7387757433173000192-HHw3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFIOhz4BkQ5ELiUbUUaI0PEXZQ39ek5rl30',
-  image:'assets/images/participations/inventra.jpeg'
+  image:Inventra,
 }
 ,
  {
@@ -47,7 +52,7 @@ const participationsData = [
     "Designing application logic for AI-driven features",
     "Handling real-world problem constraints under hackathon time limits",
   ],linkedin:'https://www.linkedin.com/posts/sumeet-salunke-052070325_innorise2k25-hackathon-bldeacet-activity-7401287828816584704-Mb6z?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFIOhz4BkQ5ELiUbUUaI0PEXZQ39ek5rl30',
-  image:'assets/images/participations/InnoRisecertificate.jpeg'
+  image:InnoRise,
 },{
   id: 4,
   event: "Optimize – Bug Basher",
@@ -68,7 +73,7 @@ const participationsData = [
     "Debugging code by reasoning rather than trial-and-error",
     "Handling stress and thinking clearly under time constraints"
   ],
-  image: "/assets/images/participations/Optmise.jpeg",   
+  image: Optmise,   
   linkedin: "https://www.linkedin.com/posts/sumeet-salunke-052070325_gratitude-bugbasher-codingjourney-activity-7322592932933337088-xTaI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFIOhz4BkQ5ELiUbUUaI0PEXZQ39ek5rl30"  , 
 },{
   id: 5,

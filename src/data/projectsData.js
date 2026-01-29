@@ -1,3 +1,6 @@
+import RemainderApp from '../assets/images/remainderApp.png';
+import PortfolioGen from '../assets/images/portfoliogen.png';
+import Assistant from '../assets/images/Assistant.png';
 const projectsData = [
   {
     id: 1,
@@ -12,7 +15,7 @@ const projectsData = [
       "Environment variables & deployment issues",
     ],
     demoLink: "https://youtu.be/xLsVCGBVQzg",
-    image:'/assets/images/remainderApp.png',
+    image:RemainderApp,
     linkedin:'https://www.linkedin.com/posts/sumeet-salunke-052070325_reactjs-fullstackdevelopment-webdevelopment-activity-7416822059336458240-XB0I?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFIOhz4BkQ5ELiUbUUaI0PEXZQ39ek5rl30'
   },
   {
@@ -29,7 +32,7 @@ const projectsData = [
     "Deployment and environment configuration",
   ],
   demoLink: "https://youtu.be/Hy_lRogDDRs",
-  image:'assets/images/portfoliogen.png',
+  image:PortfolioGen,
   linkedin:'https://www.linkedin.com/posts/sumeet-salunke-052070325_webdevelopment-miniproject-frontend-activity-7404814559099785218-OEQK?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFIOhz4BkQ5ELiUbUUaI0PEXZQ39ek5rl30'
 }
 ,{
@@ -46,7 +49,7 @@ const projectsData = [
     "Building interactive voice-driven applications",
   ],
   demoLink: "https://youtu.be/NrZYeybMIkE",
-  image:'assets/images/Assistant.png',
+  image:Assistant,
   linkedin:'https://www.linkedin.com/posts/sumeet-salunke-052070325_python-automation-learningbydoing-activity-7408743975978799104-L3nd?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFIOhz4BkQ5ELiUbUUaI0PEXZQ39ek5rl30'
 }
 
