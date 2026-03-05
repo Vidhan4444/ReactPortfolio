@@ -89,7 +89,7 @@ const projectsData = [
       "Deploying full-stack apps (Frontend → Netlify, Backend → Render)",
       "Fixing React Router routing issues on Netlify using _redirects"
     ],
-    demoLink: "https://sumeetscampuscart.netlify.app",
+    LiveLink: "https://sumeetscampuscart.netlify.app",
     backendAPI: "https://campuscart-api.onrender.com/api/products",
     githubFrontend: "https://github.com/Vidhan4444/campuscart-frontend",
     githubBackend: "https://github.com/Vidhan4444/campuscart-backend",
