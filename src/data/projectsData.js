@@ -16,7 +16,7 @@ const projectsData = [
       "Backend API integration",
       "Environment variables & deployment issues",
     ],
-    demoLink: "https://youtu.be/xLsVCGBVQzg",
+    demoLink: "https://youtu.be/xLsVCGBVQzg", LiveLink: "",
     image: RemainderApp,
     linkedin: 'https://www.linkedin.com/posts/sumeet-salunke-052070325_reactjs-fullstackdevelopment-webdevelopment-activity-7416822059336458240-XB0I?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFIOhz4BkQ5ELiUbUUaI0PEXZQ39ek5rl30'
   },
@@ -33,7 +33,7 @@ const projectsData = [
       "Database integration using MongoDB",
       "Deployment and environment configuration",
     ],
-    demoLink: "https://youtu.be/Hy_lRogDDRs",
+    demoLink: "https://youtu.be/Hy_lRogDDRs", LiveLink: "",
     image: PortfolioGen,
     linkedin: 'https://www.linkedin.com/posts/sumeet-salunke-052070325_webdevelopment-miniproject-frontend-activity-7404814559099785218-OEQK?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFIOhz4BkQ5ELiUbUUaI0PEXZQ39ek5rl30'
   }
@@ -50,7 +50,7 @@ const projectsData = [
       "Command parsing and control flow",
       "Building interactive voice-driven applications",
     ],
-    demoLink: "https://youtu.be/NrZYeybMIkE",
+    demoLink: "https://youtu.be/NrZYeybMIkE", LiveLink: "",
     image: Assistant,
     linkedin: 'https://www.linkedin.com/posts/sumeet-salunke-052070325_python-automation-learningbydoing-activity-7408743975978799104-L3nd?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFIOhz4BkQ5ELiUbUUaI0PEXZQ39ek5rl30'
   },
@@ -68,7 +68,7 @@ const projectsData = [
       "Secure CRUD operations on user-owned data",
       "Connecting frontend with protected backend APIs",
     ],
-    demoLink: "",
+    demoLink: "", LiveLink: "",
     image: JobApplicationApp,
     linkedin:
       "https://www.linkedin.com/posts/sumeet-salunke-052070325_learningwhilebuilding-fullstackdevelopment-ugcPost-7424842005446512640-9V1z?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFIOhz4BkQ5ELiUbUUaI0PEXZQ39ek5rl30"
@@ -89,6 +89,7 @@ const projectsData = [
       "Deploying full-stack apps (Frontend → Netlify, Backend → Render)",
       "Fixing React Router routing issues on Netlify using _redirects"
     ],
+    demoLink: "",
     LiveLink: "https://sumeetscampuscart.netlify.app",
     backendAPI: "https://campuscart-api.onrender.com/api/products",
     githubFrontend: "https://github.com/Vidhan4444/campuscart-frontend",
