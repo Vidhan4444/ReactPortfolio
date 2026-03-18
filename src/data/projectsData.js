@@ -3,9 +3,58 @@ import PortfolioGen from '../assets/images/portfoliogen.png';
 import Assistant from '../assets/images/Assistant.png';
 import JobApplicationApp from '../assets/images/ApplicationTracker.png';
 import CampusCart from '../assets/images/CampusCart.png';
+import MovieSearchApp from '../assets/images/movieApp.png';
+import WeatherApp from '../assets/images/WeatherApp.png';
 const projectsData = [
   {
     id: 1,
+    title: "Movie Search App",
+    shortDesc: "JavaScript movie search application using a public API",
+    tech: ["HTML", "CSS", "JavaScript", "Fetch API", "Open API"],
+    description:
+      "A responsive movie search application built with vanilla JavaScript that allows users to search for movies and view posters, titles, and release years dynamically. The project focuses on working with APIs, async/await, DOM manipulation, and rendering dynamic content in a clean card-based UI.",
+    learnings: [
+      "Using Fetch API to request external movie data",
+      "Working with async/await and handling promises",
+      "Rendering dynamic movie cards with DOM manipulation",
+      "Handling missing poster images using a placeholder fallback",
+      "Improving UI with responsive layouts and modern styling",
+      "Deploying a JavaScript project using GitHub Pages"
+    ],
+    demoLink: "",
+    LiveLink: "https://sumeet-salunke.github.io/movie-search-app",
+    backendAPI: "https://search.imdbot.workers.dev/?q=batman",
+    githubFrontend: "https://github.com/sumeet-salunke/movie-search-app",
+    githubBackend: "",
+    image: MovieSearchApp,
+    linkedin: "https://www.linkedin.com/posts/sumeet-salunke-052070325_github-sumeet-salunkemovie-search-app-activity-7440027097357770753-spI3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFIOhz4BkQ5ELiUbUUaI0PEXZQ39ek5rl30"
+  }
+  ,
+  {
+    id: 2,
+    title: "Weather App",
+    shortDesc: "JavaScript weather application using Open-Meteo APIs",
+    tech: ["HTML", "CSS", "JavaScript", "Fetch API", "Open-Meteo API"],
+    description:
+      "A clean and responsive weather application built with vanilla JavaScript that allows users to search weather by city name. The app first fetches latitude and longitude using the Open-Meteo Geocoding API, then uses those coordinates to fetch current weather data such as temperature and wind speed.",
+    learnings: [
+      "Chaining multiple API calls in sequence",
+      "Using Geocoding API to convert city names into coordinates",
+      "Fetching and displaying real-time weather data dynamically",
+      "Handling invalid city input and missing API results",
+      "Practicing async/await with dependent API requests",
+      "Deploying frontend projects on GitHub Pages"
+    ],
+    demoLink: "",
+    LiveLink: "https://sumeet-salunke.github.io/weatherApp/",
+    backendAPI: "https://geocoding-api.open-meteo.com/v1/search?name=Hubli",
+    githubFrontend: "https://github.com/sumeet-salunke/weatherApp",
+    githubBackend: "",
+    image: WeatherApp,
+    linkedin: "https://www.linkedin.com/posts/sumeet-salunke-052070325_javascript-webdevelopment-frontenddevelopment-share-7440000244521684992--wlK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFIOhz4BkQ5ELiUbUUaI0PEXZQ39ek5rl30"
+  },
+  {
+    id: 3,
     title: "Reminder App",
     shortDesc: "Email-based reminder application",
     tech: ["React", "Node.js", "MongoDB"],
@@ -21,7 +70,7 @@ const projectsData = [
     linkedin: 'https://www.linkedin.com/posts/sumeet-salunke-052070325_reactjs-fullstackdevelopment-webdevelopment-activity-7416822059336458240-XB0I?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFIOhz4BkQ5ELiUbUUaI0PEXZQ39ek5rl30'
   },
   {
-    id: 2,
+    id: 4,
     title: "Portfolio & Resume Generator",
     shortDesc: "Generate a portfolio and resume using predefined templates",
     tech: ["HTML", "CSS", "Node.js", "MongoDB"],
@@ -38,7 +87,7 @@ const projectsData = [
     linkedin: 'https://www.linkedin.com/posts/sumeet-salunke-052070325_webdevelopment-miniproject-frontend-activity-7404814559099785218-OEQK?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFIOhz4BkQ5ELiUbUUaI0PEXZQ39ek5rl30'
   }
   , {
-    id: 3,
+    id: 5,
     title: "Voice-Based Assistant",
     shortDesc: "Performs tasks based on user voice commands using Python",
     tech: ["Python", "SpeechRecognition", "pyttsx3"],
@@ -55,7 +104,7 @@ const projectsData = [
     linkedin: 'https://www.linkedin.com/posts/sumeet-salunke-052070325_python-automation-learningbydoing-activity-7408743975978799104-L3nd?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFIOhz4BkQ5ELiUbUUaI0PEXZQ39ek5rl30'
   },
   {
-    id: 4,
+    id: 6,
     title: "Job Application Management App",
     shortDesc: "Secure CRUD app for managing job applications",
     tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
@@ -75,7 +124,7 @@ const projectsData = [
   }
   ,
   {
-    id: 5,
+    id: 7,
     title: "SumeetsCampusCart",
     shortDesc: "Full-stack campus marketplace application",
     tech: ["React", "Node.js", "Express", "MongoDB", "Session Auth"],
