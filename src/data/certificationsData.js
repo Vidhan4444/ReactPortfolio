@@ -1,8 +1,8 @@
-import Reactreducx from '../assets/images/certificates/reactRedux.png';
+import ReactRedux from '../assets/images/certificates/ReactRedux.png';
 import Backend from '../assets/images/certificates/Backend.png';
 import NPTELAI from '../assets/images/certificates/AI-NPTEL.png';
 import HtmlFundamentals from '../assets/images/certificates/html-greatlearning.png';
-import JAVAPGMMING from '../assets/images/certificates/Javapggming.png';
+import JavaProgramming from '../assets/images/certificates/Javapggming.png';
 import OOPS from '../assets/images/certificates/OOPS-greatlearning.png';
 
 const certificationsData = [
@@ -10,7 +10,7 @@ const certificationsData = [
     id: 1,
     title: "React and Redux",
     issuer: "Knowledge Gate",
-    image: Reactreducx,
+    image: ReactRedux,
     description:
       "Learned core React concepts including components, hooks, and state management, along with Redux for global state handling and predictable data flow in applications.",
   },
@@ -42,7 +42,7 @@ const certificationsData = [
   id: 5,
   title: "Java Programming",
   issuer: "Great Learning",
-  image: JAVAPGMMING,
+  image: JavaProgramming,
   description:
     "Learned core Java concepts including syntax, control structures, object-oriented basics, and writing simple console-based programs.",
 },{

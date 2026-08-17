@@ -1,4 +1,4 @@
-import Optmise from '../assets/images/participations/Optmise.jpeg';
+import Optimize from '../assets/images/participations/Optmise.jpeg';
 import Inventra from '../assets/images/participations/inventra.jpeg';
 import InnoRise from '../assets/images/participations/InnoRisecertificate.jpeg';
 import Hackvyuha from '../assets/images/participations/HackvyuhaCertificate.jpeg';
@@ -41,7 +41,7 @@ const participationsData = [
  {
   id: 3,
   event: "INNORISE 2K25",
-  organizer: "BLDEACET College, Vijaypura",
+  organizer: "BLDEACET College, Vijayapura",
   type: "Hackathon",
   problemStatement: "AI Health Companion for Gen-Z",
   role: "Backend & Logic Development",
@@ -73,7 +73,7 @@ const participationsData = [
     "Debugging code by reasoning rather than trial-and-error",
     "Handling stress and thinking clearly under time constraints"
   ],
-  image: Optmise,   
+  image: Optimize,   
   linkedin: "https://www.linkedin.com/posts/sumeet-salunke-052070325_gratitude-bugbasher-codingjourney-activity-7322592932933337088-xTaI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFIOhz4BkQ5ELiUbUUaI0PEXZQ39ek5rl30"  , 
 },{
   id: 5,

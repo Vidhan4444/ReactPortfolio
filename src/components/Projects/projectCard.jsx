@@ -1,8 +1,14 @@
 import useScrollReveal from '../../hooks/useScrollReveal';
+
 const ProjectCard = ({ project, onOpen }) => {
   const { ref, isVisible } = useScrollReveal();
   return (
-    <div ref={ref} className={`project-card reveal-left ${isVisible ? "active" : ""}`}>
+    <div
+      ref={ref}
+      className={`project-card reveal-left ${isVisible ? "active" : ""}`}
+      onClick={onOpen}
+      style={{ cursor: "pointer" }}
+    >
       <div className='project-image'>
         <img src={project.image} alt={project.title} />
       </div>
@@ -16,12 +22,11 @@ const ProjectCard = ({ project, onOpen }) => {
             <span key={t}>{t}</span>
           ))}
         </div>
-        <button className="btn" onClick={onOpen}>
-          Learn more
+        
+        <button className="btn btn-outline" onClick={onOpen}>
+          Learn More <i className="bx bx-right-arrow-alt"></i>
         </button>
-
       </div>
-
     </div>
   );
 };

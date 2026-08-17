@@ -1,120 +1,150 @@
 .participations {
-  padding: 80px 10%;
-  background: #081b29;
+  padding: 100px 10%;
+  background: var(--bg-primary);
 }
 
 .participations-title {
   text-align: center;
-  color: #00abf0;
+  color: var(--accent);
   font-size: 36px;
   margin-bottom: 40px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
 }
 
 .participations-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
-.modal-box {
-  background: #081b29;
-  color: #ededed;
-  width: 90%;
-  max-width: 900px;
-
-  max-height: 85vh;
-  /* 🔑 responsive height */
-  overflow-y: auto;
-  /* scroll only if needed */
-
-  padding: 30px;
-  border-radius: 16px;
-  position: relative;
-
-  box-shadow: 0 0 30px rgba(0, 171, 240, 0.35);
+.participation-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.participation-card {
-  background: #0a2235;
-  padding: 22px;
-  border-radius: 16px;
-  cursor: pointer;
-  box-shadow: 0 0 12px rgba(0, 171, 240, 0.25);
+.participation-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
 }
 
 .participation-card h3 {
-  color: #00abf0;
-  margin-bottom: 8px;
+  color: var(--text-primary);
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
 .participation-type {
-  font-size: 14px;
-  color: #00abf0;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+  background: var(--accent-light);
+  border: 1px solid var(--border-accent);
+  padding: 3px 12px;
+  border-radius: var(--radius-full);
+  display: inline-block;
+  align-self: flex-start;
   margin-bottom: 6px;
 }
 
 .participation-org {
   font-size: 14px;
-  color: #ededed;
-  margin-bottom: 8px;
+  color: var(--text-secondary);
+  font-weight: 500;
 }
 
 .participation-problem {
   font-size: 14px;
-  color: #ededed;
+  color: var(--text-muted);
 }
 
 /* Mobile */
+@media (max-width: 768px) {
+  .participations {
+    padding: 60px 6%;
+  }
+
+  .participations-title {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .participations-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+}
+
 @media (max-width: 480px) {
   .participation-card {
     padding: 18px;
   }
 }
 
-@media (max-width: 480px) {
-  .modal-box {
-    width: 94%;
-    padding: 20px;
-    border-radius: 14px;
-    max-height: 90vh;
-  }
 
-  .modal-box h2 {
-    font-size: 20px;
-  }
-
-  .modal-box p,
-  .modal-box li {
-    font-size: 14px;
-  }
-}
-
-.participation-gallery {
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-}
-
-.participation-gallery img {
-  width: 100%;
-  max-width: 220px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-
-.modal-close {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  background: none;
-  border: none;
-  color: #00abf0;
-  font-size: 22px;
-  cursor: pointer;
-}
 
 .image-toggle-section {
   margin: 16px 0;
+}
+
+.participation-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.achievement-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(234, 179, 8, 0.15);
+  border: 1px solid rgba(234, 179, 8, 0.4);
+  color: #facc15;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  align-self: flex-start;
+  margin-bottom: 4px;
+}
+
+.participation-rounds ul,
+.participation-learnings ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.participation-rounds li,
+.participation-learnings li {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.participation-rounds li i,
+.participation-learnings li i {
+  color: var(--accent);
+  font-size: 16px;
+  margin-top: 3px;
+  flex-shrink: 0;
 }
 
 .participation-image {
@@ -123,9 +153,10 @@
 
 .participation-image img {
   width: 100%;
-  max-height: 320px;
+  max-height: 360px;
   object-fit: contain;
-  border-radius: 10px;
-  background: #0a2235;
+  border-radius: var(--radius-md);
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-subtle);
   padding: 8px;
 }

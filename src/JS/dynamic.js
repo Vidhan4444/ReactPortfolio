@@ -3,7 +3,7 @@
         (entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classNameList.add("show");
+            entry.target.classList.add("show");
             observer.unobserve(entry.target);
           }
         });

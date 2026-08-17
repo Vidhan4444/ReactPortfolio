@@ -1,40 +1,45 @@
 .showcase {
-  padding: 60px 10%;
-  background: #081b29;
+  padding: 100px 10%;
+  background: var(--bg-primary);
 }
 
 .showcase-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  margin-bottom: 40px;
+  gap: 12px;
+  margin-bottom: 50px;
+  background: var(--bg-card);
+  padding: 6px;
+  border-radius: var(--radius-full);
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--border-subtle);
 }
 
 .showcase-nav button {
   background: none;
   border: none;
-  color: #ccc;
-  font-size: 16px;
+  color: var(--text-secondary);
+  font-size: 15px;
+  font-weight: 500;
   cursor: pointer;
-  padding: 8px 4px;
+  padding: 10px 28px;
+  border-radius: var(--radius-full);
   position: relative;
-  transition: color 0.3s ease;
-  /* border-bottom: 2px solid transparent; */
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .showcase-nav button:hover {
-  color: #00abf0;
+  color: var(--text-primary);
 }
 
-.showcase-nav button.active::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 100%;
-  height: 2px;
-  border-color: #00abf0;
+.showcase-nav button.active {
+  color: #070f1e;
+  background: var(--accent);
+  font-weight: 600;
+  box-shadow: 0 4px 15px var(--accent-glow);
 }
 
 .showcase-content {
@@ -57,6 +62,10 @@
 }
 
 @media (max-width: 768px) {
+  .showcase {
+    padding: 60px 6%;
+  }
+
   .showcase-nav {
     gap: 22px;
     flex-wrap: wrap;

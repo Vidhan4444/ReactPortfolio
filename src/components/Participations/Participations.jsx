@@ -1,6 +1,7 @@
 import { useState } from "react";
 import participationsData from "../../data/participationsData";
 import ParticipationCard from "./ParticipationCard";
+import Modal from "../common/Modal";
 import "./Participations.css";
 
 const Participations = () => {
@@ -14,7 +15,7 @@ const Participations = () => {
 
   return (
     <section className="participations">
-      <h2 className="participations-title">Participations</h2>
+      <h2 className="participations-title">Event <span className="gradient-text">Participations</span></h2>
 
       {/* GRID */}
       <div className="participations-grid">
@@ -31,14 +32,19 @@ const Participations = () => {
       </div>
 
       {/* MODAL */}
-      {activeParticipation && (
-        <div className="modal-backdrop">
-          <div className="modal-box">
-            <button className="modal-close" onClick={closeModal}>
-              ✕
-            </button>
-
-            <h2>{activeParticipation.event}</h2>
+      <Modal
+        isOpen={Boolean(activeParticipation)}
+        onClose={closeModal}
+        title={activeParticipation?.event}
+        maxWidth="640px"
+      >
+        {activeParticipation && (
+          <div className="participation-modal-body">
+            {activeParticipation.achievement && (
+              <div className="achievement-badge">
+                <i className="bx bx-trophy"></i> {activeParticipation.achievement}
+              </div>
+            )}
 
             <p>
               <strong>Organizer:</strong> {activeParticipation.organizer}
@@ -57,7 +63,39 @@ const Participations = () => {
               <strong>Role:</strong> {activeParticipation.role}
             </p>
 
-            <p>{activeParticipation.description}</p>
+            <p className="participation-desc">{activeParticipation.description}</p>
+
+            {/* ROUNDS */}
+            {activeParticipation.rounds?.length > 0 && (
+              <div className="participation-rounds">
+                <p>
+                  <strong>Competition Rounds:</strong>
+                </p>
+                <ul>
+                  {activeParticipation.rounds.map((round, i) => (
+                    <li key={i}>
+                      <i className="bx bx-chevron-right"></i> {round}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* LEARNINGS */}
+            {activeParticipation.learnings?.length > 0 && (
+              <div className="participation-learnings">
+                <p>
+                  <strong>What I Learned:</strong>
+                </p>
+                <ul>
+                  {activeParticipation.learnings.map((learning, i) => (
+                    <li key={i}>
+                      <i className="bx bx-check"></i> {learning}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* VIEW IMAGE */}
             {activeParticipation.image && (
@@ -66,7 +104,7 @@ const Participations = () => {
                   className="btn btn-outline"
                   onClick={() => setShowImage((prev) => !prev)}
                 >
-                  {showImage ? "Hide image" : "View image"}
+                  <i className="bx bx-image"></i> {showImage ? "Hide Certificate Image" : "View Certificate Image"}
                 </button>
 
                 {showImage && (
@@ -81,34 +119,22 @@ const Participations = () => {
               </div>
             )}
 
-            {/* LEARNINGS */}
-            {activeParticipation.learnings?.length > 0 && (
-              <>
-                <p>
-                  <strong>What I Learned:</strong>
-                </p>
-                <ul>
-                  {activeParticipation.learnings.map((learning, i) => (
-                    <li key={i}>{learning}</li>
-                  ))}
-                </ul>
-              </>
-            )}
-
             {/* LINKEDIN POST */}
             {activeParticipation.linkedin && (
-              <a
-                href={activeParticipation.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn"
-              >
-                See post
-              </a>
+              <div className="modal-links">
+                <a
+                  href={activeParticipation.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  <i className="bx bxl-linkedin"></i> View LinkedIn Post
+                </a>
+              </div>
             )}
           </div>
-        </div>
-      )}
+        )}
+      </Modal>
     </section>
   );
 };

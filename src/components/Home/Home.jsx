@@ -1,12 +1,12 @@
 import "./Home.css";
-import backgroundImage from '../../assets/images/BackgroundImage.png';
+import backgroundImage from '../../assets/images/professional_sumeet.png';
 
 const Home = () => {
   return (
     <section id='home' className="home">
       <div className="home-content">
-        <h1>Hi, I'm Sumeet Salunke</h1>
-        <h3>Full stack developer</h3>
+        <h1>Hi, I'm <span className="gradient-text">Sumeet Salunke</span></h1>
+        <h3>Full Stack Developer</h3>
 
         <p className="home-paragraph">
           I’m a Full Stack Developer with hands-on experience in building web applications using React, Node.js, and MongoDB. I enjoy working on real-world problems, from creating clean, responsive user interfaces to handling backend logic and API integrations. Through projects and hackathons, I’ve strengthened my understanding of full-stack development and continue to improve my problem-solving and system design skills.

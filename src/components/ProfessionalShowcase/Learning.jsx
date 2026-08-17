@@ -5,10 +5,10 @@ const Learning = () => {
   return (
     <div ref={ref} className={`learning reveal-left ${isVisible ? "active" : ""}`}>
       <ul>
-        <li>Advanced React patterns and hooks</li>
-        <li>Backend authentication basics</li>
-        <li>Improving data structure and alogroithms</li>
-        <li>deployment and production debugging</li>
+        <li><i className="bx bx-book-open"></i> Advanced React patterns and hooks</li>
+        <li><i className="bx bx-book-open"></i> Backend authentication basics</li>
+        <li><i className="bx bx-book-open"></i> Improving data structures and algorithms</li>
+        <li><i className="bx bx-book-open"></i> Deployment and production debugging</li>
       </ul>
     </div>
   );

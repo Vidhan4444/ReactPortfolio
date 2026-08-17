@@ -31,7 +31,7 @@ const projectsData = [
       "Managing production-level issues beyond local development"
     ],
     demoLink: "",
-    LiveLink: "https://sumeet-salunke.github.io/ShopHub/",
+    liveLink: "https://sumeet-salunke.github.io/ShopHub/",
     backendAPI: "https://shophub-backend-nb1e.onrender.com",
     githubFrontend: "https://github.com/sumeet-salunke/ShopHub",
     githubBackend: "https://github.com/sumeet-salunke/ShopHub",
@@ -57,7 +57,7 @@ const projectsData = [
       "Understanding full stack application flow from frontend to database"
     ],
     demoLink: "",
-    LiveLink: "https://sumeet-salunke.github.io/Mini_Jira_FullStack",
+    liveLink: "https://sumeet-salunke.github.io/Mini_Jira_FullStack",
     backendAPI: "https://mini-jira-backend.onrender.com",
     githubFrontend: "https://github.com/sumeet-salunke/Mini_Jira_FullStack",
     githubBackend: "https://github.com/sumeet-salunke/Mini_Jira_FullStack",
@@ -80,7 +80,7 @@ const projectsData = [
       "Fixing React Router routing issues on Netlify using _redirects"
     ],
     demoLink: "",
-    LiveLink: "https://sumeetscampuscart.netlify.app",
+    liveLink: "https://sumeetscampuscart.netlify.app",
     backendAPI: "https://campuscart-api.onrender.com/api/products",
     githubFrontend: "https://github.com/Vidhan4444/campuscart-frontend",
     githubBackend: "https://github.com/Vidhan4444/campuscart-backend",
@@ -103,7 +103,7 @@ const projectsData = [
       "Deploying a JavaScript project using GitHub Pages"
     ],
     demoLink: "",
-    LiveLink: "https://sumeet-salunke.github.io/movie-search-app",
+    liveLink: "https://sumeet-salunke.github.io/movie-search-app",
     backendAPI: "https://search.imdbot.workers.dev/?q=batman",
     githubFrontend: "https://github.com/sumeet-salunke/movie-search-app",
     githubBackend: "",
@@ -127,7 +127,7 @@ const projectsData = [
       "Deploying frontend projects on GitHub Pages"
     ],
     demoLink: "",
-    LiveLink: "https://sumeet-salunke.github.io/weatherApp/",
+    liveLink: "https://sumeet-salunke.github.io/weatherApp/",
     backendAPI: "https://geocoding-api.open-meteo.com/v1/search?name=Hubli",
     githubFrontend: "https://github.com/sumeet-salunke/weatherApp",
     githubBackend: "",
@@ -220,7 +220,7 @@ const projectsData = [
       "Structuring small frontend projects properly"
     ],
     demoLink: "",
-    LiveLink: "https://sumeet-salunke.github.io/expense-tracker/",
+    liveLink: "https://sumeet-salunke.github.io/expense-tracker/",
     backendAPI: "",
     githubFrontend: "",
     githubBackend: "",

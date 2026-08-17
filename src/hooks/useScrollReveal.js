@@ -21,7 +21,7 @@ const useScrollReveal = (options = {}) => {
     if (ref.current) observer.observe(ref.current);
 
     return () => observer.disconnect();
-  }, [options]);
+  }, [options.threshold, options.root, options.rootMargin]);
 
   return { ref, isVisible };
 };

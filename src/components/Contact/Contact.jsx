@@ -29,7 +29,7 @@ const Contact = () => {
       id="contact"
       className={`contact reveal ${isVisible ? "active" : ""}`}
     >
-      <h2 className="contact-title">Get in Touch</h2>
+      <h2 className="contact-title">Get in <span className="gradient-text">Touch</span></h2>
 
       <div className="contact-container">
         <div className="contact-info">

@@ -9,7 +9,7 @@ const Projects = () => {
 
   return (
     <section className="projects" id='projects'>
-      <h2 className="projects-title">Projects</h2>
+      <h2 className="projects-title">My <span className="gradient-text">Projects</span></h2>
 
       <div className="projects-grid">
         {projectsData.map((project) => (

@@ -1,21 +1,85 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --bg-primary: #060d19;
+  --bg-secondary: #0b172a;
+  --bg-card: rgba(11, 23, 42, 0.78);
+  --bg-card-hover: rgba(16, 32, 58, 0.88);
+  --accent: #38bdf8;
+  --accent-hover: #0ea5e9;
+  --accent-glow: rgba(56, 189, 248, 0.35);
+  --accent-light: rgba(56, 189, 248, 0.14);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(56, 189, 248, 0.35);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --gradient-accent: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+  --gradient-text: linear-gradient(135deg, #ffffff 30%, #38bdf8 100%);
+  --gradient-glow: linear-gradient(90deg, #0ea5e9, #38bdf8, #818cf8);
+  --font-main: "Poppins", sans-serif;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 35px rgba(56, 189, 248, 0.3);
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-main);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #081b29;
-  color: #ededed;
+  background-color: var(--bg-primary);
+  background-image: 
+    radial-gradient(circle at 12% 18%, rgba(56, 189, 248, 0.13) 0%, transparent 45%),
+    radial-gradient(circle at 88% 65%, rgba(129, 140, 248, 0.10) 0%, transparent 45%),
+    radial-gradient(circle at 50% 92%, rgba(14, 165, 233, 0.08) 0%, transparent 50%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  overflow-x: hidden;
+  line-height: 1.6;
 }
 
+/* Gradient Text Highlight */
+.gradient-text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism utility */
+.glass-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
+  transform: translateY(-6px);
+}
+
+/* Smooth Scroll Reveal */
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(35px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal.active {
@@ -25,8 +89,8 @@ body {
 
 .reveal-left {
   opacity: 0;
-  transform: translateX(-40px);
-  transition: all 0.7s ease;
+  transform: translateX(-35px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal-left.active {
@@ -34,8 +98,51 @@ body {
   transform: translateX(0);
 }
 
-@media (max-width: 768px) {
+/* Global Modern Button System */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font-main);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #070f1e;
+  box-shadow: 0 4px 14px var(--accent-glow);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+}
 
+.btn:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
+}
+
+.btn-outline {
+  background: var(--accent-light);
+  border: 1px solid var(--border-accent);
+  color: var(--accent);
+  box-shadow: none;
+}
+
+.btn-outline:hover {
+  background: var(--accent);
+  color: #070f1e;
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px var(--accent-glow);
+}
+
+@media (max-width: 768px) {
   .decorative-circle,
   .about::before,
   .about::after {

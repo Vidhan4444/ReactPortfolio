@@ -1,6 +1,7 @@
 import { useState } from "react";
 import certificationsData from "../../data/certificationsData";
 import CertificationCard from "./CertificationCard";
+import Modal from "../common/Modal";
 import "./Certifications.css";
 
 const Certifications = () => {
@@ -8,7 +9,7 @@ const Certifications = () => {
 
   return (
     <section className="certifications">
-      <h2 className="certifications-title">Certifications</h2>
+      <h2 className="certifications-title">My <span className="gradient-text">Certifications</span></h2>
 
       <div className="certifications-grid">
         {certificationsData.map((cert) => (
@@ -20,27 +21,28 @@ const Certifications = () => {
         ))}
       </div>
 
-      {activeCert && (
-        <div className="modal-backdrop">
-          <div className="modal-box">
-            <button
-              className="modal-close"
-              onClick={() => setActiveCert(null)}
-            >
-              ✕
-            </button>
-
-            <h2>{activeCert.title}</h2>
-            <p><strong>Issuer:</strong> {activeCert.issuer}</p>
-            <img
-              src={activeCert.image}
-              alt={activeCert.title}
-              className="cert-modal-image"
-            />
-            <p>{activeCert.description}</p>
+      <Modal
+        isOpen={Boolean(activeCert)}
+        onClose={() => setActiveCert(null)}
+        title={activeCert?.title}
+        maxWidth="560px"
+      >
+        {activeCert && (
+          <div className="cert-modal-body">
+            <p className="cert-issuer-badge">
+              <strong>Issuer:</strong> {activeCert.issuer}
+            </p>
+            <div className="cert-modal-img-container">
+              <img
+                src={activeCert.image}
+                alt={activeCert.title}
+                className="cert-modal-image"
+              />
+            </div>
+            <p className="cert-desc">{activeCert.description}</p>
           </div>
-        </div>
-      )}
+        )}
+      </Modal>
     </section>
   );
 };

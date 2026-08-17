@@ -1,34 +1,45 @@
 .about {
   width: 100%;
-  min-height: 100vh;
-
-  background-color: black;
-  color: white;
-  padding: 60px 10%;
+  padding: 100px 10%;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
 }
 
 .about-title {
   text-align: center;
-  color: #00abf0;
+  color: var(--accent);
   font-size: 36px;
-  margin-bottom: 40px;
-  font-weight: 400;
+  margin-bottom: 50px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
 }
 
 .about-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 50px;
   flex-wrap: wrap;
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  box-shadow: var(--shadow-md);
 }
 
 .about-img img {
-  width: 450px;
-  height: 450px;
-  border-radius: 50%;
+  width: 340px;
+  height: 340px;
+  border-radius: var(--radius-full);
   object-fit: cover;
-  box-shadow: 0 0 20px rgba(0, 67, 233, 0.5);
+  border: 3px solid var(--border-accent);
+  box-shadow: 0 0 35px var(--accent-glow);
+  transition: transform 0.4s ease;
+}
+
+.about-img img:hover {
+  transform: scale(1.03);
 }
 
 .about-content {
@@ -37,37 +48,44 @@
 }
 
 .about-content h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
 }
 
 .about-content p {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.75;
 }
 
 .about-btn {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .cv-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   background: transparent;
-  border: 2px solid #00abf0;
-  color: #00abf0;
+  border: 1px solid var(--accent);
+  color: var(--accent);
   font-weight: 600;
+  font-size: 15px;
   padding: 12px 28px;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   text-decoration: none;
   box-sizing: border-box;
-  transition: background-color 0.3s ease, color 0.3 ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 10px rgba(0, 171, 240, 0.6);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.15);
 }
 
 .cv-btn:hover {
-  background: #00abf0;
-  color: #081b29;
-  box-shadow: 0 0 18px rgba(0, 171, 240, 0.9);
+  background: var(--accent);
+  color: #070f1e;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px var(--accent-glow);
 }
 
 @media (max-width: 768px) {
